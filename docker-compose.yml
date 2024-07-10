@@ -1,5 +1,4 @@
-# Author: Mazhar Ahmed, CTO, Oceanize Inc
-# All rights reserved. Copyright (c) Oceanize Inc
+
 version: '3'
 services:
   app:
@@ -18,7 +17,7 @@ services:
       DB_HOST: mysql
       DB_NAME: flask
       DB_USER: flask
-      DB_PASSWORD: slimdingo85
+      DB_PASSWORD: Nawaz012
     volumes:
       - ./app:/app
     links:
@@ -46,10 +45,10 @@ services:
     #   - "3306:3306"
     environment:
       # credentials
-      MYSQL_ROOT_PASSWORD: slimdingo85
+      MYSQL_ROOT_PASSWORD: Nawaz012
       MYSQL_DATABASE: flask
       MYSQL_USER: flask
-      MYSQL_PASSWORD: slimdingo85
+      MYSQL_PASSWORD: Nawaz012
 
   phpmyadmin:
     depends_on:
@@ -65,8 +64,8 @@ services:
     environment:
       PMA_HOST: mysql
       PMA_USER: flask
-      PMA_PASSWORD: slimdingo85
-      MYSQL_ROOT_PASSWORD: slimdingo85
+      PMA_PASSWORD: Nawaz012
+      MYSQL_ROOT_PASSWORD: Nawaz012
 
 # volumes definition here
 volumes:
